@@ -24,9 +24,14 @@ app.use('/slack/actions', slackInteractions.expressMiddleware())
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
+console.log(process.env.SLACK_SIGNING_SECRET)
+
+
+
 
 slackEvents.on('message', async (event) => {
   // Filter out messages from bots
+
   if (event.bot_id) {
     return;
   }
@@ -41,6 +46,9 @@ slackEvents.on('message', async (event) => {
   }
 })
 
+app.get('/', function (req, res) {
+  res.send('Hello EB from Node running in Docker!\n');
+});
 
 // Starts server
 app.listen(port, function() {

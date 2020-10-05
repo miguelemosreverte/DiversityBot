@@ -1,7 +1,0 @@
-node_modules/*
-.DS_Store
-
-
-
-// http://f66c2db66023.ngrok.io/slack/actions
-// ./node_modules/.bin/slack-verify --secret 52b47f8c08a212ecd03682a874e13ecb [--path=/slack/events] [--port=3000]
