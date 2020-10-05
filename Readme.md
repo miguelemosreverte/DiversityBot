@@ -14,4 +14,4 @@ for staging at AWS:
 Grab the folders internal to this repository, and compact them onto a .zip file. Then drag and drop that over ElasticBeanStalk for a quick deploy
 Then grab the url provided by ElasticBeanStalk, and use that instead of the url we talked about in the paragraph below
 
-
+Remember to use the Amazon Linux 64 bit Version 1 -- instead of the default which is the version 2
